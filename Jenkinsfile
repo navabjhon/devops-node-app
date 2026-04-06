@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/navabjhon/devops-node-app.git'
+                git branch: 'main', url: 'https://github.com/navabjhon/devops-node-app.git'
             }
         }
 
