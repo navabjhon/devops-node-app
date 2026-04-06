@@ -15,16 +15,16 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t $DOCKER_IMAGE:latest .'
+                sh 'docker build -t navab86/devops-app:latest .'
             }
         }
-
+        
         stage('Push to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
                     sh 'echo $PASS | docker login -u $USER --password-stdin'
-                    sh 'docker push $DOCKER_IMAGE:latest'
-                }
+                    sh 'docker push navab86/devops-app:latest'
+                    }    
             }
         }
 
