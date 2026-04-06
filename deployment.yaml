@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: yourdockerhubusername/devops-app:latest
+        image: navab86/devops-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
