@@ -28,12 +28,6 @@ pipeline {
             }
         }
 
-        stage('Start Minikube') {
-            steps {
-                sh 'minikube status || minikube start --driver=docker --memory=2500 --cpus=2'
-            }
-        }
-
         stage('Deploy to Kubernetes') {
             steps {
                 sh 'kubectl apply -f deployment.yaml'
