@@ -114,7 +114,7 @@ http://<minikube-ip>:30007
 
 ---
 
-## 📸 Screenshots (Add these)
+## Screenshots for reference 
 
 * Docker image in Docker Hub
   <img width="1457" height="507" alt="image" src="https://github.com/user-attachments/assets/a251f97d-a238-425c-92c3-a0088eae976b" />
