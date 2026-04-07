@@ -40,7 +40,7 @@ Developer → GitHub → Jenkins → Docker → Docker Hub → Kubernetes
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 devops-node-app/
